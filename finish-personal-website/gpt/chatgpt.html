@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bahattin Yunus Çetin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bahattin Yunus Çetin'in kişisel web sitesi.">
+    <meta name="keywords" content="bahattin, yunus, çetin, yazılım, html, plc">
+    
+    <style>
+        /* Temel sıfırlama ve genel font */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Ana sayfa kapsayıcısı */
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* HEADER alanı: logo + sosyal medya */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        header img.logo {
+            height: 80px;
+        }
+
+        .sosyal {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sosyal img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        /* Navigasyon menüsü */
+        nav {
+            background-color: deepskyblue;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        /* İçerik alanı: sol içerik + sağ menü */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .main-content {
+            flex: 2;
+        }
+
+        .main-content img {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 15px;
+        }
+
+        .main-content h1 {
+            font-size: 28px;
+            color: darkred;
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            color: #333;
+            font-size: 16px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        aside h2 {
+            font-size: 20px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        /* Alt menü */
+        footer {
+            margin-top: 30px;
+            border-top: 2px solid #ddd;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive tasarım */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Üst kısım: Logo ve sosyal medya -->
+        <header>
+            <img src="resimler/1.jpeg" alt="Bahattin Logo" class="logo">
+            <div class="sosyal">
+                <img src="resimler/2.jpeg" alt="Instagram">
+                <img src="resimler/2.jpeg" alt="Twitter">
+                <img src="resimler/2.jpeg" alt="LinkedIn">
+            </div>
+        </header>
+
+        <!-- Navigasyon menüsü -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="benkimim.html">Hakkımda</a></li>
+                <li><a href="egitim.html">Eğitim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+
+        <!-- İçerik ve yan menü -->
+        <div class="content-wrapper">
+            <!-- Ana içerik -->
+            <div class="main-content">
+                <img src="resimler/3.jpg" alt="Tanıtım Resmi">
+                <h1>Bahattin Yunus Çetin</h1>
+                <p>
+                    Merhaba, ben Bahattin Yunus. Yazılım mühendisliği öğrencisiyim. Bu siteyi HTML ve CSS öğrenmek için tasarladım.
+                    Geliştirmeye devam ediyorum. İlgi alanlarım arasında PLC sistemleri, yapay zeka ve web tasarımı bulunuyor.
+                </p>
+            </div>
+
+            <!-- Yan menü -->
+            <aside>
+                <h2>Yan Menü</h2>
+                <p>Bu kısımda blog, eğitim notları veya bağlantılar gibi içerikler yer alabilir.</p>
+            </aside>
+        </div>
+
+        <!-- Alt kısım -->
+        <footer>
+            <p>
+                <a href="index.html">Anasayfa</a> |
+                <a href="benkimim.html">Hakkımda</a> |
+                <a href="egitim.html">Eğitim</a> |
+                <a href="iletisim.html">İletişim</a>
+            </p>
+            <p>Tüm hakları saklıdır © 2025 Bahattin Yunus Çetin</p>
+        </footer>
+    </div>
+</body>
+</html>
