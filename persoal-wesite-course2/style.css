@@ -1,0 +1,103 @@
+/* kutular sabit genişlikte olsun */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/* kutu genişlikleri */
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* satırlar */
+.row{
+    border: cornflowerblue solid 2px;
+    background-color: cornflowerblue;
+    margin: 5px;
+    border-radius: 10px;
+    }
+/* satırları yan yana gelmez */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    }
+/* tepkisel resim */
+img{
+    width: 100%;
+    height: auto;
+    }
+    /* "col-" yasla */
+    [class*="col-"]{
+        float: left;
+        padding: 15px;
+        border: 1px solid rgb(240, 237, 237);
+        background-color: rgb(222, 222, 158)
+        border-radius: 8px;
+    }
+    @media screen and (max-width: 400px){
+        [class*="col-"]{width: 100%;}
+    }   
+    
+    #ust{
+        min-height: 100px;
+         }
+   #menu{
+    min-height: 50px;
+       }
+   #orta{
+    min-height: 400px;
+ }
+    #alt{
+        height: 50px;
+    }
+#ikon{
+    width: 30px;
+    float: right;
+    margin-right: 10px;
+
+}
+#menu #anamenu ul li{
+    float: left;
+    border: 1px solid blue  ;
+    width: 25%;
+    background-color: rgb(131, 160, 214);
+    border-radius: 5px;
+    padding: ;
+    min-height: 26px;
+}
+/* Tepkisel buton */
+@media screen and (max-width: 400px){
+    #menu #anamenu ul li{width: 100%;}
+}
+    #menu #anamenu a{
+        color: cornsilk;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 5px;
+        text-decoration: none;
+    }
+    #menu #anamenu a:hover{
+         color: blue;
+         text-decoration: underline;
+       
+    }
+    #menu #anamenu a:active, a:visited{
+        color: blueviolet;
+       
+      }
+      #alt  #altmenu p{
+        text-align: center;
+       
+        font-size: small;
+      }
