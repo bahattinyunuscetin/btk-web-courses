@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arrays</title>
+    </head>
+    <body>
+        <script>
+            var kelime=new Array();
+
+            kelime=prompt("kelime giriniz:");
+            kelime=kelime.toUpperCase();
+
+            var boyut=kelime.length;
+            for(var i=0;i<boyut;i++)
+               document.write(kelime[i]+"<br>");
+
+            for(var i=boyut-1; i>=0; i--)
+                document.write(kelime[i]+"<br>");   
+        </script>
+
+    </body>
+</html>
