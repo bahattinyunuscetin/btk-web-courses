@@ -5,8 +5,13 @@
         <title></title>
     </head>
     <body>
-        <h1 id="id1">Başlık Metni</h1>
-        <button onclick="document.getElementById('id1').style.color='red'">
+        <h1 id="id1" 
+        onclick="this.innerHTML='TIKLADIN'" 
+        onmouseover="this.innerHTML='fare geldi'"
+         onmouseout="this.innerHTML='fare gitti'"
+        >Başlık Metni</h1>
+        <button 
+        onclick="document.getElementById('id1').style.color='red'">
             tıkla
         </button>
         <script>
