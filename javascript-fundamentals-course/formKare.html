@@ -4,18 +4,53 @@
         <meta charset="utf8">
         <title></title>
     </head>
-    <body>
+    <body onload="odaklan()">
         <form >
              Sayi:<input type="text" id="sayi"> <br>
-          Karesi:<span id="sonuc"></span><br>
+             Karesi:<span id="sonuc"></span><br>
              <input type="button" value="hesapla" onclick="karesi()">
+             <h1>ikinci işlem</h1>
+            Sayi1:<input type="text" id="sayi1"> <br>
+             Sayi2:<input type="text" id="sayi2"> <br>
+             Toplam:<span id="toplam"></span><br>
+             <input type="button" value="topla" onclick="topla()">
 
         </form>
         <script>
+         function odaklan(){
+            document.getElementById("sayi").style.backgroundColor="yellow";
+            document.getElementById("sayi").focus;
+
+         }
+
+         function topla(){
+            var sayi1=Number(document.getElementById("sayi1").value)
+             var sayi2=Number(document.getElementById("sayi2").value)
+             var toplam=sayi1+sayi2;
+             document.getElementById("toplam").innerHTML=toplam;
+
+         }   
          function karesi(){
             var sayi=Number(document.getElementById("sayi").value)
-            var kare=sayi*sayi;     
+            if(sayi==""){
+                alert("lütfen sayi girin")
+                document.getElementById("sayi").style.backgroundColor="red";
+                document.getElementById("sayi").focus();
+            }else{
+                if(sayi<=0){
+                 alert("lütfen pozitif sayi girin") 
+                  document.getElementById("sayi").style.backgroundColor="red";
+                document.getElementById("sayi").focus();  
+                }else{
+                      var kare=sayi*sayi;     
             document.getElementById("sonuc").innerHTML=kare;
+            document.getElementById("sayi").style.backgroundColor="yellow";
+            document.getElementById("sayi").focus();   
+                }
+            
+
+            }
+
          }
         </script>
     </body>

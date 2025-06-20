@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title></title>
+    </head>
+    <body>
+        <P id="hata"></P>
+        <script>
+            try{
+                aaalert("hata olabilir");
+
+            }catch(err){
+                document.getElementById("HATA").innerHTML=err.message;
+
+            }
+        </script>
+    </body>
+</html>
