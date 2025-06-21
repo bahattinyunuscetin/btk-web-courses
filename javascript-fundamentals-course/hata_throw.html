@@ -11,6 +11,7 @@
         <input type="button" value="Kontrol et" onclick="kontrol()">
     </form>
     <p id="hatailetisi"></p>
+    <p id="girilendeger"></p>
 
     <script>
         function kontrol() {
@@ -31,7 +32,10 @@
             } catch (err) {
                 hatailetisi.innerHTML = "Hata: " + err;
             }
-        }
+            finally{
+                document.getElementById("girilendeger").innerHTML="girilen deger "+dersnotu; 
+            }
+        } 
     </script>
 </body>
 </html>
